@@ -29,9 +29,9 @@ public class TestFilms {
     @Test
     public void testNotFilm() {
         FilmsManager manager = new FilmsManager();
-        manager.addFilm();
+        manager.addFilm("");
         String[] actual = manager.findAll();
-        String[] expected = {};
+        String[] expected = {""};
         Assertions.assertArrayEquals(expected, actual);
     }
 
